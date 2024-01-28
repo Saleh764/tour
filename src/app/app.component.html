@@ -1,1 +1,10 @@
-hello
+<div *ngIf="!isLoggedIn()">
+    <router-outlet ></router-outlet>
+</div>
+
+<div *ngIf="isLoggedIn()" style="height: 100%;">
+    <app-toolbar (menuButtonBar)="togglesSideBar()">app-toolbar</app-toolbar>
+    <app-sidenav [OpenedSideBar]="SideBarOpened">
+    <router-outlet></router-outlet>
+   </app-sidenav>
+</div>

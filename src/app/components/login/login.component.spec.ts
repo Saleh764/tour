@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ToulBarComponent } from './toul-bar.component';
+import { LoginComponent } from './login.component';
 
-describe('ToulBarComponent', () => {
-  let component: ToulBarComponent;
-  let fixture: ComponentFixture<ToulBarComponent>;
+describe('LoginComponent', () => {
+  let component: LoginComponent;
+  let fixture: ComponentFixture<LoginComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ToulBarComponent]
+      declarations: [LoginComponent]
     });
-    fixture = TestBed.createComponent(ToulBarComponent);
+    fixture = TestBed.createComponent(LoginComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
