@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tour",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -97,15 +97,26 @@
             ],
             "styles": [
               "src/styles.scss"
-              
             ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": "6131000b-8c0b-4fb8-8602-63fb657065de"
+    "analytics": "6131000b-8c0b-4fb8-8602-63fb657065de",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
